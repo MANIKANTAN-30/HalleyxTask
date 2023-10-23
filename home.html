@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+
+  </head>
+  <body>
+    <div id="mySidenav" class="sidenav">
+      <h1 style=color:aliceblue> Form Designer </h1>
+      <a href="#" draggable="true" ondragstart="drag(event, 'Layout')"
+        ><img src="images/icons8-layout-64.png" />Layout</a
+      >
+      <a href="#" draggable="true" ondragstart="drag(event, 'Label')"
+        ><img src="images/icons8-labels-50.png" />Label</a
+      >
+      <a href="#" draggable="true" ondragstart="drag(event, 'Button')"
+        ><img src="images/icons8-button-64.png" />Button</a
+      >
+      <a href="#" draggable="true" ondragstart="drag(event, 'Text Box')"
+        ><img src="images/icons8-text-box-64.png" />Text Box</a
+      >
+      <a href="#" draggable="true" ondragstart="drag(event, 'Check Box')"
+        ><img src="images/icons8-check-box-24.png" />Check Box</a
+      >
+      <a href="#" draggable="true" ondragstart="drag(event, 'Radio Button')"
+        ><img src="images/icons8-radio-30.png" /> Radio Button</a
+      >
+      <a href="#" draggable="true" ondragstart="drag(event, 'Table')"
+        ><img src="images/icons8-table-24.png" />Table</a
+      >
+      <a href="#" draggable="true" ondragstart="drag(event, 'Navigation')"
+        ><img src="images/icons8-link-24.png" />Navigation</a
+      >
+      <a href="#" draggable="true" ondragstart="drag(event, 'Image')"
+        ><img src="images/icons8-image-64.png" />Image</a
+      >
+    </div>
+
+    <div class="sidenav-buttons">
+      <button class="publish-button">Publish</button>
+      <button class="preview-button" onclick="loadPreview()">Preview</button>
+    </div>
+
+    <div id="form-preview" ondrop="drop(event)" ondragover="allowDrop(event)">
+      <form id="preview-form"></form>
+    </div>
+
+    <div class="down-buttons">
+      <button class="button1" id="clear-button">Clear</button>
+      <button class="button2" id="save-button" onclick="saveFormPreview()">Save </button>
+    </div>
+
+    <script src="home.js"></script>
+
+  </body>
+</html>

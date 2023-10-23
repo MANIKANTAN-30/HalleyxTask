@@ -1,0 +1,161 @@
+body {
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  
+}
+
+.sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #272323;
+  overflow-x: hidden;
+  padding-top: 30px;
+  font-family: 'Times New Roman', Times, serif;
+}
+.sidenav h1{
+  font-size: 25px;
+  margin-left: 5px;
+}
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #f3e9e9;
+  display: block;
+}
+.sidenav a img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end; /* Align buttons to the right */
+  padding: 10px;
+}
+
+.publish-button,
+.preview-button {
+  padding: 10px 20px; /* Add some padding to the buttons */
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.publish-button {
+  background-color: #4caf50;
+  margin: 5px;
+}
+
+.publish-button:hover {
+  background-color: #45a049;
+}
+
+.preview-button {
+  background-color: #008cba;
+  margin: 5px;
+}
+
+.preview-button:hover {
+  background-color: #007a8a;
+}
+
+#form-builder {
+  display: flex;
+}
+
+#toolbox {
+  width: 150px;
+  min-height: 300px;
+  padding: 20px;
+  border: 5px solid #ccc;
+}
+
+#toolbox .draggable {
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  cursor: move;
+}
+#form-preview {
+  padding: 300px;
+  border: 1px solid #0e0e0e;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  width: 670px;
+  margin-left: calc(160px + 50px);
+}
+.down-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 10px;
+}
+
+.button1,
+.button2 {
+  padding: 10px 20px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button1 {
+  background-color: #4caf50;
+  margin: 5px;
+}
+
+.button1:hover {
+  background-color: #45a049;
+}
+
+.button2 {
+  background-color: #008cba;
+  margin: 5px;
+}
+
+.button2:hover {
+  background-color: #007a8a;
+}
+.layout {
+  display: flex;
+  flex-direction: row;
+}
+
+.layout-section {
+  flex: 1;
+  width: 200px;
+  height: 100px;
+  padding: 10px;
+  border: 1px solid #141313;
+  margin: 5px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+    width: 250px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+/* style.css */
+.table-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
